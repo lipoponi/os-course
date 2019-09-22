@@ -1,4 +1,4 @@
 #!/bin/bash
 
-ps axu | awk '$11 ~ /^\/sbin\// {print $2}' > sbin.txt
+ps axo pid=,cmd= | awk '$2 ~ /^\/sbin\// {print $1}' > sbin.txt
 echo "Output stored in ./sbin.txt"
