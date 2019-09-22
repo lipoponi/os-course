@@ -1,7 +1,6 @@
 #!/bin/bash
 
-echo -n "Count: "
-ps_output="$(ps axu)"
-echo "$ps_output" | grep -c ^user
-echo "$ps_output" | awk '/^user/ {printf "%s:%s\n", $2, $11}' > user.txt
-echo "List stored at ./user.txt"
+echo -n "Count:"
+ps axo user= | grep -c ^user
+ps axo user=,pid=,cmd= | awk '/^user/ {print $2 ":" $3}' > user.txt
+echo "List stored in ./user.txt"
