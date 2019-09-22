@@ -1,2 +1,3 @@
-*.out
-virtual\ machines/
+*
+!*.(sh|pdf)
+!.gitignore
