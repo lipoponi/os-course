@@ -2,9 +2,8 @@
 
 ps axo pid= | while read pid; do
   path="/proc/$pid/statm"
-  test -f "$path"
 
-  if [[ $? -eq 1 ]]; then
+  if [[ ! -f "$path" ]]; then
     continue
   fi
 
