@@ -1,10 +1,10 @@
 #!/bin/bash
 
-if [[ $PWD == $HOME ]]
+if [[ "$PWD" == "$HOME" ]]
 then
   pwd
   exit 0
 else
-  echo Error
+  echo 'Error'
   exit 1
 fi
