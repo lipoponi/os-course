@@ -5,17 +5,17 @@ menu=$'1. nano\n2. vim\n3. links\n4. quit\n'
 while [[ true ]]
 do
   read -p "$menu" input
-  case $input in
-    "1")
+  case "$input" in
+    '1')
       nano
       ;;
-    "2")
+    '2')
       vim
       ;;
-    "3")
+    '3')
       links
       ;;
-    "4")
+    '4')
       break
       ;;
   esac
