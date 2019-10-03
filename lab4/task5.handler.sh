@@ -8,7 +8,7 @@ touch task5.in
 (tail -n 0 -f task5.in) |
 while true; do
   read line
-  
+
   case "$line" in
     QUIT)
       echo "Everything's alright. QUIT"
