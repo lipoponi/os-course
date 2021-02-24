@@ -1,6 +1,6 @@
 # ITMO OS course 2019
 
-This repository contains ITMO OS course materials and homeworks (mainly homeworks and statements).
+This repository contains ITMO OS course homeworks.
  - [Labwork 1: basics of Linux CLI](./lab1)
  - [Labwork 2: text streams processing](./lab2)
  - [Labwork 3: process monitoring](./lab3)
